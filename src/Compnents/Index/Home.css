@@ -1,0 +1,45 @@
+body{
+    background-color: beige;
+}
+h1 {
+    text-align: center;
+    color: #0d47a1;
+    font-family:'Georgia';
+    padding: 10px;
+    
+}
+
+.container {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center; 
+    padding: 30px;
+}
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 300ms ease-in-out;
+    box-shadow: 0 5px 10px 0 #0a0a0a7c;
+    text-align: center;
+    padding: 10px;
+}
+.card + .card {
+    margin-left: -10%;
+}
+.card:hover{
+    transform: rotate(0deg);
+}
+.card:hover ~ .card{
+    z-index: 1;
+    translate: 60px;
+}
+.home-page-banner{
+    width: 100%;
+    height: 500px;
+    background: url(https://4.bp.blogspot.com/-NusT8_BxXvU/WigtjvJvKLI/AAAAAAABOyg/VP7N3f2xgkAOOU2LPKaVCBdTsMiDJp_EgCK4BGAYYCw/s1600/Web-design.jpg);
+    padding: 10px;
+   filter: blur(1px);
+}
